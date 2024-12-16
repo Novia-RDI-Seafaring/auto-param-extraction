@@ -1,0 +1,51 @@
+{
+    "column_classes": [
+        "one-columns"
+    ],
+    "list_classes": [
+        "list-style-1"
+    ],
+    "table_border_classes": [
+        "no-borders"
+    ],
+    "table_classes": [
+        "full-width"
+    ],
+    "table_color_classes": [
+        "colorize-first-row"
+    ],
+    "heading_fonts": [
+        "Inter"
+    ],
+    "body_fonts": [
+        "Roboto"
+    ],
+    "line_height_size": {
+        "from": 1.0,
+        "to": 1.05,
+        "step": 0.05
+    },
+    "heading1_font_size": {
+        "from": 24,
+        "to": 24
+    },
+    "heading2_font_size": {
+        "from": 20,
+        "to": 20
+    },
+    "heading3_font_size": {
+        "from": 16,
+        "to": 16
+    },
+    "paragraph_font_size": {
+        "from": 12,
+        "to": 12
+    },
+    "small_font_size": {
+        "from": 8,
+        "to": 8
+    },
+    "image_max_width": [
+        50
+    ]
+}

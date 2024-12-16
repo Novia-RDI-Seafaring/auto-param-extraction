@@ -1,0 +1,291 @@
+{
+    "FullHeightAD": {
+        "parameter_properties": {
+            "value": 850,
+            "unit": "mm",
+            "bboxes": [
+                [
+                    162.51,
+                    50.849763779527734,
+                    301.09000000000003,
+                    73.32976377952775
+                ]
+            ],
+            "pageIndexes": [
+                2
+            ]
+        }
+    },
+    "FullWidthAD": {
+        "parameter_properties": {
+            "value": 420,
+            "unit": "mm",
+            "bboxes": [
+                [
+                    301.09,
+                    50.849763779527734,
+                    439.66999999999996,
+                    73.32976377952775
+                ]
+            ],
+            "pageIndexes": [
+                2
+            ]
+        }
+    },
+    "FullHeightALB": {
+        "parameter_properties": {
+            "value": 900,
+            "unit": "mm",
+            "bboxes": [
+                [
+                    162.51,
+                    95.8897637795277,
+                    301.09000000000003,
+                    118.36976377952772
+                ]
+            ],
+            "pageIndexes": [
+                2
+            ]
+        }
+    },
+    "FullWidthALB": {
+        "parameter_properties": {
+            "value": 412,
+            "unit": "mm",
+            "bboxes": [
+                [
+                    301.09,
+                    95.8897637795277,
+                    439.66999999999996,
+                    118.36976377952772
+                ]
+            ],
+            "pageIndexes": [
+                2
+            ]
+        }
+    },
+    "FramePlateMaterial": {
+        "parameter_properties": {
+            "value": "Carbon steel, epoxy painted",
+            "unit": null,
+            "bboxes": [
+                [
+                    200.61,
+                    352.4097637795277,
+                    566.94,
+                    374.8897637795277
+                ]
+            ],
+            "pageIndexes": [
+                2
+            ]
+        }
+    },
+    "FieldGasketsMaterial": {
+        "parameter_properties": {
+            "value": "CGB, XGBL",
+            "unit": null,
+            "bboxes": [
+                [
+                    200.61,
+                    307.3697637795277,
+                    566.94,
+                    329.84976377952773
+                ]
+            ],
+            "pageIndexes": [
+                2
+            ]
+        }
+    },
+    "ADPEDMaxDesignPressure": {
+        "parameter_properties": {
+            "value": 9.0,
+            "unit": "bar",
+            "bboxes": [
+                [
+                    124.29,
+                    464.9697637795277,
+                    337.1,
+                    487.4497637795277
+                ]
+            ],
+            "pageIndexes": [
+                2
+            ]
+        }
+    },
+    "ADpvcALSMaxDesignPressure": {
+        "parameter_properties": {
+            "value": 9.5,
+            "unit": "bar",
+            "bboxes": [
+                [
+                    124.29,
+                    487.4497637795277,
+                    337.1,
+                    509.9297637795277
+                ]
+            ],
+            "pageIndexes": [
+                2
+            ]
+        }
+    },
+    "EGpvcALSMaxDesignPressure": {
+        "parameter_properties": {
+            "value": 11.5,
+            "unit": "bar",
+            "bboxes": [
+                [
+                    124.29,
+                    509.92976377952766,
+                    337.1,
+                    532.4097637795277
+                ]
+            ],
+            "pageIndexes": [
+                2
+            ]
+        }
+    },
+    "EGASMEMaxDesignTemp": {
+        "parameter_properties": {
+            "value": 240,
+            "unit": "°C",
+            "bboxes": [
+                [
+                    337.1,
+                    532.4897637795277,
+                    566.94,
+                    554.9697637795277
+                ]
+            ],
+            "pageIndexes": [
+                2
+            ]
+        }
+    },
+    "EGPEDMaxDesignTemp": {
+        "parameter_properties": {
+            "value": 180,
+            "unit": "°C",
+            "bboxes": [
+                [
+                    337.1,
+                    554.9697637795277,
+                    566.94,
+                    577.4497637795278
+                ]
+            ],
+            "pageIndexes": [
+                2
+            ]
+        }
+    },
+    "HeatTransferPlatesMaterial": {
+        "parameter_properties": {
+            "value": "201/202L",
+            "unit": null,
+            "bboxes": [
+                [
+                    200.61,
+                    284.8897637795277,
+                    566.94,
+                    307.3697637795277
+                ]
+            ],
+            "pageIndexes": [
+                2
+            ]
+        }
+    },
+    "MetalLinedFlangeConnectionMaterial": {
+        "parameter_properties": {
+            "value": "stainless steel",
+            "unit": null,
+            "bboxes": [
+                [
+                    200.61,
+                    329.93976377952765,
+                    566.94,
+                    352.41976377952767
+                ]
+            ],
+            "pageIndexes": [
+                2
+            ]
+        }
+    },
+    "RubberLinedFlangeConnectionMaterial": {
+        "parameter_properties": {
+            "value": "CGB",
+            "unit": null,
+            "bboxes": [
+                [
+                    200.61,
+                    329.93976377952765,
+                    566.94,
+                    352.41976377952767
+                ]
+            ],
+            "pageIndexes": [
+                2
+            ]
+        }
+    },
+    "ADpvcALSFlangeConnectionStandard": {
+        "parameter_properties": {
+            "value": "EN 1092-1 DN80 PN10 ASME B16.5 Class 150 NPS 3 JIS B2220 10K 80A",
+            "unit": null,
+            "bboxes": [
+                [
+                    199.71,
+                    50.849763779527734,
+                    566.94,
+                    100.34976377952773
+                ]
+            ],
+            "pageIndexes": [
+                3
+            ]
+        }
+    },
+    "ADPEDFlangeConnectionStandard": {
+        "parameter_properties": {
+            "value": "EN 1092-1 DN80 PN10 ASME B16.5 Class 150 NPS 3.",
+            "unit": null,
+            "bboxes": [
+                [
+                    199.71,
+                    100.35976377952773,
+                    566.94,
+                    136.3897637795277
+                ]
+            ],
+            "pageIndexes": [
+                3
+            ]
+        }
+    },
+    "EGASMEFlangeConnectionStandard": {
+        "parameter_properties": {
+            "value": "ASME B16.5 Class 150 NPS 3 EN 1092–1 DN80 PN16.",
+            "unit": null,
+            "bboxes": [
+                [
+                    199.71,
+                    199.35976377952773,
+                    566.94,
+                    235.3897637795277
+                ]
+            ],
+            "pageIndexes": [
+                3
+            ]
+        }
+    }
+}

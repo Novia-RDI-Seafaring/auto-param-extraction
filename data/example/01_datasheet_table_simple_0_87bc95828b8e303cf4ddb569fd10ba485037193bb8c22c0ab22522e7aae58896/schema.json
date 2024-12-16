@@ -1,0 +1,301 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "JSON schema defining the parameters that are do be extracted from a datasheet.",
+    "definitions": {
+        "bboxes": {
+            "description": "List of Bounding boxes (xyxy notation) outlining the information in the original document required to extract the parameter. If the parameter is explicitly stated this list usually contains only 1 bbox. If information from multiple location needs to be combined, it contains the bbox to each of those locations.",
+            "type": "array",
+            "items": {
+                "type": "array",
+                "items": {
+                    "type": "number"
+                },
+                "minItems": 4,
+                "maxItems": 4
+            },
+            "minItems": 1
+        },
+        "pageIndexes": {
+            "description": "Index of the pages required to extract the specific parameter. Can be multiple pages if information is distributed across pages.",
+            "type": "array",
+            "items": {
+                "type": "integer"
+            },
+            "minItems": 1
+        },
+        "parameter_properties": {
+            "type": "object",
+            "properties": {
+                "value": {
+                    "description": "Value of the parameter",
+                    "type": [
+                        "number",
+                        "string"
+                    ]
+                },
+                "unit": {
+                    "description": "Unit of the parameter. For unitless parameters this can be null.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "bboxes": {
+                    "$ref": "#/definitions/bboxes"
+                },
+                "pageIndexes": {
+                    "$ref": "#/definitions/pageIndexes"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "value",
+                "unit",
+                "bboxes",
+                "pageIndexes"
+            ]
+        }
+    },
+    "type": "object",
+    "properties": {
+        "FullHeightAD": {
+            "label": "FullHeightAD",
+            "description": "Full height of the heat exchanger of frame type AD. Desired unit: mm.",
+            "type": "object",
+            "properties": {
+                "parameter_properties": {
+                    "$ref": "#/definitions/parameter_properties"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "parameter_properties"
+            ]
+        },
+        "FullWidthAD": {
+            "label": "FullWidthAD",
+            "description": "Full width of the heat exchanger of frame type AD. Desired unit: mm.",
+            "type": "object",
+            "properties": {
+                "parameter_properties": {
+                    "$ref": "#/definitions/parameter_properties"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "parameter_properties"
+            ]
+        },
+        "FullHeightALB": {
+            "label": "FullHeightALB",
+            "description": "Full height of the heat exchanger of frame type ALB. Desired unit: mm.",
+            "type": "object",
+            "properties": {
+                "parameter_properties": {
+                    "$ref": "#/definitions/parameter_properties"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "parameter_properties"
+            ]
+        },
+        "FullWidthALB": {
+            "label": "FullWidthALB",
+            "description": "Full width of the heat exchanger of frame type ALB. Desired unit: mm.",
+            "type": "object",
+            "properties": {
+                "parameter_properties": {
+                    "$ref": "#/definitions/parameter_properties"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "parameter_properties"
+            ]
+        },
+        "FramePlateMaterial": {
+            "label": "FramePlateMaterial",
+            "description": "Material of frame plate. Desired unit: None.",
+            "type": "object",
+            "properties": {
+                "parameter_properties": {
+                    "$ref": "#/definitions/parameter_properties"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "parameter_properties"
+            ]
+        },
+        "FieldGasketsMaterial": {
+            "label": "FieldGasketsMaterial",
+            "description": "Material of the field gaskets. Desired unit: None.",
+            "type": "object",
+            "properties": {
+                "parameter_properties": {
+                    "$ref": "#/definitions/parameter_properties"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "parameter_properties"
+            ]
+        },
+        "ADPEDMaxDesignPressure": {
+            "label": "ADPEDMaxDesignPressure",
+            "description": "Max design pressure for frame type AD with PED. Desired unit: bar.",
+            "type": "object",
+            "properties": {
+                "parameter_properties": {
+                    "$ref": "#/definitions/parameter_properties"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "parameter_properties"
+            ]
+        },
+        "ADpvcALSMaxDesignPressure": {
+            "label": "ADpvcALSMaxDesignPressure",
+            "description": "Max design pressure for frame type AD with pvcALS. Desired unit: bar.",
+            "type": "object",
+            "properties": {
+                "parameter_properties": {
+                    "$ref": "#/definitions/parameter_properties"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "parameter_properties"
+            ]
+        },
+        "EGpvcALSMaxDesignPressure": {
+            "label": "EGpvcALSMaxDesignPressure",
+            "description": "Max design pressure for frame type EG with pvcALS. Desired unit: bar.",
+            "type": "object",
+            "properties": {
+                "parameter_properties": {
+                    "$ref": "#/definitions/parameter_properties"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "parameter_properties"
+            ]
+        },
+        "EGASMEMaxDesignTemp": {
+            "label": "EGASMEMaxDesignTemp",
+            "description": "Max temerature for frame type EG with ASME. Desired unit: °C.",
+            "type": "object",
+            "properties": {
+                "parameter_properties": {
+                    "$ref": "#/definitions/parameter_properties"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "parameter_properties"
+            ]
+        },
+        "EGPEDMaxDesignTemp": {
+            "label": "EGPEDMaxDesignTemp",
+            "description": "Max temerature for frame type EG with PED. Desired unit: °C.",
+            "type": "object",
+            "properties": {
+                "parameter_properties": {
+                    "$ref": "#/definitions/parameter_properties"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "parameter_properties"
+            ]
+        },
+        "HeatTransferPlatesMaterial": {
+            "label": "HeatTransferPlatesMaterial",
+            "description": "Material of heat transfer plates. Desired unit: None.",
+            "type": "object",
+            "properties": {
+                "parameter_properties": {
+                    "$ref": "#/definitions/parameter_properties"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "parameter_properties"
+            ]
+        },
+        "MetalLinedFlangeConnectionMaterial": {
+            "label": "MetalLinedFlangeConnectionMaterial",
+            "description": "Material of metal ligned flange connections. Desired unit: None.",
+            "type": "object",
+            "properties": {
+                "parameter_properties": {
+                    "$ref": "#/definitions/parameter_properties"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "parameter_properties"
+            ]
+        },
+        "RubberLinedFlangeConnectionMaterial": {
+            "label": "RubberLinedFlangeConnectionMaterial",
+            "description": "Material of rubber ligned flange connections. Desired unit: None.",
+            "type": "object",
+            "properties": {
+                "parameter_properties": {
+                    "$ref": "#/definitions/parameter_properties"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "parameter_properties"
+            ]
+        },
+        "ADpvcALSFlangeConnectionStandard": {
+            "label": "ADpvcALSFlangeConnectionStandard",
+            "description": "Flange Connection standard for frame type AD with pvcALS. Desired unit: None.",
+            "type": "object",
+            "properties": {
+                "parameter_properties": {
+                    "$ref": "#/definitions/parameter_properties"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "parameter_properties"
+            ]
+        },
+        "ADPEDFlangeConnectionStandard": {
+            "label": "ADPEDFlangeConnectionStandard",
+            "description": "Flange Connection standard for frame type AD with PED. Desired unit: None.",
+            "type": "object",
+            "properties": {
+                "parameter_properties": {
+                    "$ref": "#/definitions/parameter_properties"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "parameter_properties"
+            ]
+        },
+        "EGASMEFlangeConnectionStandard": {
+            "label": "EGASMEFlangeConnectionStandard",
+            "description": "Flange Connection standard for frame type EG with ASME. Desired unit: None.",
+            "type": "object",
+            "properties": {
+                "parameter_properties": {
+                    "$ref": "#/definitions/parameter_properties"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "parameter_properties"
+            ]
+        }
+    },
+    "additionalProperties": false
+}
