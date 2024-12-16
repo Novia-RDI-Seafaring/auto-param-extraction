@@ -1,0 +1,25 @@
+dataset_path: "/workspaces/meri_article/data/eval_results"
+res_dir: "/workspaces/meri_article/results/eval_results" # stores pickle results in this dir
+cache_dir: "/workspaces/meri_article/caches/eval_results" # caches extracted parameters in this dir
+
+methods_to_run:
+
+  - method: DOCLING # MERI with Docling (2-step approach)
+    id: meri_gpt4o
+    kwargs:
+      extractor_kwargs:
+        chunks_max_characters: 450000
+        chunk_overlap: 1
+        n_rounds: 1
+        model: 'azure/gpt-4o'
+        model_temp: 0.0
+      docling_kwargs:
+        do_ocr: true
+
+  - method: VANILLA_LLM
+    id: GPT4o # baseline 1-step approach
+    kwargs: 
+      model: GPT4o
+      prompt_key: VANILLA_LLM_PROMPT
+      text_mode: ocr_text
+      model_temp: 0.0

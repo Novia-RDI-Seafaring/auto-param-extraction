@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meri_evaluation"
+version = "0.1.0"
+description = "Evaluation of MERI package for parameter extraction from pdfs."
+authors = [
+    { name = "Christian Möller", email = "christian.moller@novia.fi" },
+    { name = "Lamin Jatta", email = "lamin.jatta@novia.fi" }
+]
+requires-python = ">= 3.8"
+dependencies = [
+    "python-fasthtml",
+    "jsonpath-ng",
+    "seaborn",
+    "docling"
+]
+
+
